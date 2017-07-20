@@ -1,0 +1,63 @@
+body {
+	margin: 0 auto;
+}
+nav {
+	display: inline;
+}
+h1 {
+	text-align: center;
+}
+h2 {
+
+}
+h3 {
+
+}
+h4 {
+
+}
+h5 {
+
+}
+.name {
+	background-color: #c0ffee;
+	padding: 1.2em;
+
+}
+.name h1 {
+
+	margin: 0;
+}
+nav a {
+	text-decoration: none;
+	color: black;
+}
+nav li {
+	display: inline;
+}
+nav ul {
+	display: flex;
+	justify-content: space-around;
+	margin: 0;
+	background-color: #75B2A2;
+	list-style-type: none;
+	text-align: center;
+}
+
+.socials img {
+	max-width: 70px;
+	max-height: 70px;
+}
+footer {
+text-align: right;
+}
+
+#contact {
+	text-align: center;
+}
+
+section {
+		display: flex;
+		justify-content: space-around;
+		margin: 0 30%;
+	}
