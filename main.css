@@ -1,41 +1,20 @@
 body {
 	margin: 0 auto;
 }
-nav {
-	display: inline;
-}
 h1 {
 	text-align: center;
 }
-h2 {
-
-}
-h3 {
-
-}
-h4 {
-
-}
-h5 {
-
-}
-.name {
-	background-color: #c0ffee;
-	padding: 1.2em;
-
-}
-.name h1 {
-
-	margin: 0;
-}
 nav a {
 	text-decoration: none;
-	color: black;
+	background-color: white;
+	font-size: 1.2em;
 }
-nav li {
-	display: inline;
+nav div a:hover {
+	background-color: red;
+	color: white;
 }
-nav ul {
+
+nav div {
 	display: flex;
 	justify-content: space-around;
 	margin: 0;
@@ -43,21 +22,33 @@ nav ul {
 	list-style-type: none;
 	text-align: center;
 }
-
-.socials img {
-	max-width: 70px;
-	max-height: 70px;
-}
-footer {
-text-align: right;
-}
-
-#contact {
-	text-align: center;
-}
-
 section {
 		display: flex;
 		justify-content: space-around;
 		margin: 0 30%;
 	}
+footer {
+	text-align: right;
+}
+.active {
+  font-size: 24px;
+	margin: 0 5px;
+}
+.socials img {
+	max-width: 70px;
+	max-height: 70px;
+}
+#contact {
+	text-align: center;
+}
+.name {
+	background-color: #c0ffee;
+	padding: 1.2em;
+
+}
+.name h1 {
+	margin: 0;
+}
+/*.active {
+
+}*/
