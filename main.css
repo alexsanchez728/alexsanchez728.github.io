@@ -1,9 +1,26 @@
 body {
+	font-family: 'Droid Sans', sans-serif;
 	margin: 0 auto;
 }
 h1 {
 	text-align: center;
 }
+section {
+		display: flex;
+		justify-content: space-around;
+		margin: 0 30%;
+	}
+footer {
+	text-align: right;
+}
+.name {
+	background-color: #c0ffee;
+	padding: 1.2em;
+}
+.name h1 {
+	margin: 0;
+}
+/*NAV BAR*/
 nav a {
 	text-decoration: none;
 	background-color: white;
@@ -13,7 +30,6 @@ nav div a:hover {
 	background-color: red;
 	color: white;
 }
-
 nav div {
 	display: flex;
 	justify-content: space-around;
@@ -22,18 +38,11 @@ nav div {
 	list-style-type: none;
 	text-align: center;
 } 
-section {
-		display: flex;
-		justify-content: space-around;
-		margin: 0 30%;
-	}
-footer {
-	text-align: right;
-}
 .active {
   font-size: 24px;
 	margin: 0 5px;
 }
+/*CONTACT PAGE*/
 .socials img {
 	max-width: 70px;
 	max-height: 70px;
@@ -41,14 +50,38 @@ footer {
 #contact {
 	text-align: center;
 }
-.name {
-	background-color: #c0ffee;
-	padding: 1.2em;
 
+/*BLOG AND CARDS*/
+#blog-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
 }
-.name h1 {
-	margin: 0;
+.blog-card {
+	margin: 1%;
+	width: 300px;
+	border: 1px solid rgb(216, 216, 216,);
+  border: 1px solid rgba(216, 216, 216, .75);
+	border-radius: 2%;
+	flex-direction: column;
+	align-items: center;
 }
-/*.active {
+.blog-card > div:first-child {
+	text-align: center;
+	text-transform: uppercase;
+	border-bottom: 1px solid rgba(216, 216, 216, .75);;
+}
+.blog-card h4 {
+	font-size: 1.6em;
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+.blog-card h6 {
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+.blog-card p {
+	margin: 10px 12px 12px;
+}
 
-}*/
+
