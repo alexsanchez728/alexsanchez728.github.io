@@ -12,9 +12,10 @@ section {
 	}
 footer {
 	text-align: right;
+	background-color: #c0ffee;
+
 }
 .name {
-	background-color: #c0ffee;
 	padding: 1.2em;
 }
 .name h1 {
@@ -52,7 +53,7 @@ nav div {
 }
 
 /*BLOG AND CARDS*/
-#blog-container {
+#blog-holder {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
