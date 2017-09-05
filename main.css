@@ -95,9 +95,9 @@ border-bottom: 1px solid #75B2A2;
 */
 .jumbotron p {
 	font-size: 1em;
-	line-height: 1.5em;
+	line-height: 1.4em;
 }
-.blog-card {
+.panel {
 	height: 300px;
 	overflow: hidden;
 }
