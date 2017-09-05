@@ -9,22 +9,7 @@ const blogDomString = (blogs) => {
 	for (let i = 0; i < blogs.length; i++){
 		let currentBlog = blogs[i];
 
-		// // domString +=			`<div class="col-sm-6 col-md-4 blog-card" id="blognumber-${[i]}">`;
-		// // domString +=		`<div class="col-sm-4>`;
-		// domString +=		`<div class="panel panel-default col-sm-4 blog-card">`;
-		// domString +=			`<div class="panel-heading">`;
-		// domString +=				 `<h4 class="panel-title">${currentBlog.title}</h4>`;
-		// domString +=				`<h6>${currentBlog.date}</h6>`;
-		// domString +=			`</div>`;
-		// // domString +=				`</div>`;
-		// domString +=			`<div class="panel-body">`;
-		// domString +=				`<p>${currentBlog.content}</p>`;
-		// domString +=			`</div>`;
-		// domString +=		`</div>`;
-		// // domString +=		`</div>`;
-
-
-    domString +=		`<div class="col-xs-4">`
+    domString +=		`<div class="col-sm-4">`
     domString +=			`<div class="panel panel-default">`
     domString +=				`<div class="panel-heading">`
     domString +=					`<h4 class="panel-title">${currentBlog.title}</h4>`
@@ -38,7 +23,6 @@ const blogDomString = (blogs) => {
 	}
 	blogHolder.innerHTML += domString;
 	addClickListener();
-
 }
 
 const addClickListener = () => {
@@ -66,10 +50,7 @@ const addClickListener = () => {
 // }
 const searchButtonListener = (allBlogs) => {
 	blogSearchBtn.addEventListener("click", () => {
-
 		filterResults(allBlogs);
-
-
 	})
 }
 const filterResults = (allBlogs) => {
