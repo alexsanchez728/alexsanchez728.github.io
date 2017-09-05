@@ -30,9 +30,9 @@ const blogDomString = (blogs) => {
 const addClickListener = () => {
 
 	let blogCards = document.getElementsByClassName("blog-card");
-	for (var i = 0; i < blogCards.length; i++) {
+	for (let i = 0; i < blogCards.length; i++) {
 
-	  blogCards[i].addEventListener("click", function (event) {
+	  blogCards[i].addEventListener("click", (event) => {
 
 		let clickedBlog = event.currentTarget.innerHTML;
 		jumboBlog.innerHTML = clickedBlog;
@@ -40,45 +40,40 @@ const addClickListener = () => {
 	  });
 	};
 }
-// const searchTextListener = (allBlogs) => {
-// 	//once you hit enter, THEN it grabs the input value
-// 	inputField.addEventListener('keyup', function(event){
 
-// 			var txt = inputField.value;
-// 			console.log("get input text", txt)
-// 			//by default, filter loops through the array
-// 				//thing = the current planet that I'm on, does it fit?
-// 			var results = allBlogs.filter(function(thing) {
-// 				//if the indexOf actually has something, than it doesn't equal -1 which means return that
-// 				return thing.title.indexOf(txt)>-1;
-// 			})
-// 			// pass in the shortened array to print
-// 			blogDomString(results);
-// 			console.log(results);
-// 	})
-// }
-const searchButtonListener = (allBlogs) => {
-	blogSearchBtn.addEventListener("click", (event) => {
-
-		var txt = inputField.value;
-		txt = txt.toLowerCase();
-					var results = allBlogs.filter(function(thing) {
-				//if the indexOf actually has something, than it doesn't equal -1 which means return that
-				return thing.content.indexOf(txt)>-1;
-			})
-			// pass in the shortened array to print
-			blogHolder.innerHTML = "";
-			blogDomString(results);
-			console.log(results);
+// Enter to search doesn't work because the button is in a form
+// Is there a way to disable default actions so I can bind the enter key here? 
+const inputFieldListener = (allBlogs) => {
+	inputField.addEventListener("keypress", (event) => {
+		if (event.key ===  "Enter") {
+		filterResults(allBlogs);
+		}
 	})
 }
+const searchButtonListener = (allBlogs) => {
+	blogSearchBtn.addEventListener("click", () => {
+
+		filterResults(allBlogs);
+
+
+	})
+}
+const filterResults = (allBlogs) => {
+	let txt = inputField.value;
+	txt = txt.toLowerCase();
+	let results = allBlogs.filter((thing) => {
+		return thing.tags.indexOf(txt)>-1;
+	})
+	blogHolder.innerHTML = "";
+	blogDomString(results);
+	console.log(results);
+	}
 
 function executeAfterFileLoads () {
 	const blogContent = JSON.parse(this.responseText).blogs;
 
 	blogDomString(blogContent)
 	addClickListener();
-	// searchTextListener(blogContent);
 	searchButtonListener(blogContent);
 }
 const executeAfterCodeBreaks = () => {
