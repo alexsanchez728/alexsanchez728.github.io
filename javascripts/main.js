@@ -1,4 +1,7 @@
 "use strict";
 
-require("./blog.js");
-require("./events.js");
+let apiKeys = require("./apiKeys");
+let events = require("./events");
+
+apiKeys.retrieveKeys();
+events.init();
