@@ -1,12 +1,10 @@
 "use strict";
 
-// const dombuilder = require("./dom");
 const blogger = require("./blog");
 const projectPage = require("./projects");
 // const firebaseApi = require("./firebaseApi");
 
 
-// const blogs = require("./blog");
 const blogsOrProjects = () => {
 	if (document.querySelector("title").innerHTML === "Blog") {
 		blogger.checkOutTheseBlogs();
@@ -14,8 +12,6 @@ const blogsOrProjects = () => {
 		projectPage.checkOutTheseProjects();
 	}
 };
-
-
 
 const init = () => {
 	blogsOrProjects();

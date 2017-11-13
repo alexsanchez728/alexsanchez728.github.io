@@ -65,7 +65,10 @@ border-bottom: 1px solid #75B2A2;
 	margin-right: 15px;
 }*/
 
-
+img {
+	max-height: 150px;
+	max-width: 150px;
+}
 
 
 
@@ -100,6 +103,13 @@ border-bottom: 1px solid #75B2A2;
 .panel {
 	height: 300px;
 	overflow: hidden;
+}
+.panel-heading {
+	max-height: 150px;
+}
+.project-panel {
+	height: 180px;
+	overflow: scroll;
 }
 
 
