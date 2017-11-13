@@ -6,7 +6,7 @@ const firebaseApi = require("./firebaseApi");
 let blogs = [];
 
 const checkOutTheseBlogs = () => {
-	firebaseApi.getBlogs("blogs").then((_blogs) => {
+	firebaseApi.getContent("blogs").then((_blogs) => {
 		blogs = _blogs;
 		dombuilder.blogDomString(blogs);
 		console.log("blogs in blogsOrProjects", blogs);

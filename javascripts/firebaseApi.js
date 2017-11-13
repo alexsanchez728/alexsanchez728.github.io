@@ -10,7 +10,7 @@ const setKey = (key) => {
 
 
 // added an argument to query on whether the use selected the blog page or the project page
-const getBlogs = (choice) => {
+const getContent = (choice) => {
     let toDisplay = [];
     return new Promise((resolve, reject) => {
         console.log("the key made it to getBlogs", firebaseKey);
@@ -31,4 +31,4 @@ const getBlogs = (choice) => {
     });
 };
 
-module.exports = {setKey, getBlogs};
+module.exports = {setKey, getContent};

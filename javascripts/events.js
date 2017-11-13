@@ -2,6 +2,7 @@
 
 // const dombuilder = require("./dom");
 const blogger = require("./blog");
+const projectPage = require("./projects");
 // const firebaseApi = require("./firebaseApi");
 
 
@@ -11,7 +12,7 @@ const blogsOrProjects = () => {
 		blogger.checkOutTheseBlogs();
 		blogger.blogEvents();
 	} else if (document.querySelector("title").innerHTML === "Projects") {
-		// projectPage.checkOutTheseProjects();
+		projectPage.checkOutTheseProjects();
 	}
 };
 
