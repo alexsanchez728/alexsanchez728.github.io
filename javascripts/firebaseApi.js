@@ -4,20 +4,28 @@ let firebaseKey = "";
 
 const setKey = (key) => {
     firebaseKey = key;
+    console.log("the key made it to setKey", firebaseKey);
+
 };
 
-const getBlogs = () => {
-    let blogs = [];
+
+// added an argument to query on whether the use selected the blog page or the project page
+const getBlogs = (choice) => {
+    let toDisplay = [];
     return new Promise((resolve, reject) => {
-        $.ajax(`${firebaseKey.databaseURL}/blogs.json`).then((results) => {
+        console.log("the key made it to getBlogs", firebaseKey);
+        // $.ajax(`${firebaseKey.databaseURL}/${choice}.json`).then((fbBlogs) => {
+        $.ajax(`https://ads-personal-site.firebaseio.com/${choice}.json`).then((results) => {
             if (results != null) {
                 Object.keys(results).forEach((key) => {
                     results[key].id = key;
-                    blogs.push(results[key]);
+                    toDisplay.push(results[key]);
                 });
             }
-            resolve(blogs);
+            console.log("blogs in getBlogs", toDisplay);
+            resolve(toDisplay);
         }).catch((err) => {
+            console.log("error in getBlogs", err);
             reject(err);
         });
     });

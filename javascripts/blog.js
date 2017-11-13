@@ -1,18 +1,45 @@
 "use strict";
 
 const dombuilder = require("./dom");
+const firebaseApi = require("./firebaseApi");
 
-let blogContent = [];
+let blogs = [];
 
-$.get("../db/blog-posts.json").done((data) => {
-	blogContent = data.blogs;
-	dombuilder.blogDomString(blogContent);
-}).fail((error) => {
-	console.log(error);
-});
-
-const getBlogs = () => {
-	return blogContent;
+const checkOutTheseBlogs = () => {
+	firebaseApi.getBlogs("blogs").then((_blogs) => {
+		blogs = _blogs;
+		dombuilder.blogDomString(blogs);
+		console.log("blogs in blogsOrProjects", blogs);
+	}).catch((err) => {
+		console.log("error in blogsOrProjects", err);
+	});	
 };
 
-module.exports = {getBlogs};
+const blogEvents = () => {
+	$("#search-btn").click(() => {
+		// let allBlogs = blogs.getBlogs();
+		filterResults(blogs);
+	});
+
+	$("#input-field").keypress((event) => {
+		// let allBlogs = blogs.getBlogs();
+		if (event.key === "Enter") {
+			event.preventDefault();
+			filterResults(blogs);
+		}
+	});
+
+	const filterResults = (allBlogs) => {
+		let txt = $("#input-field").val();
+		txt = txt.toLowerCase();
+		let results = blogs.filter((thing) => {
+			return thing.tags.indexOf(txt) > -1;
+		});
+		$("#blog-holder").html = "";
+		dombuilder.blogDomString(results);
+	};
+};
+
+
+
+module.exports = { checkOutTheseBlogs, blogEvents};
