@@ -8,7 +8,7 @@ let projects = [];
 const checkOutTheseProjects = () => {
     firebaseApi.getContent("projects").then((_projects) => {
         projects = _projects;
-        dombuilder.blogDomString(projects);
+        dombuilder.projectsDomString(projects);
     }).catch((error) => {
         console.log("error in checkoutTheseProjects", error);
     });

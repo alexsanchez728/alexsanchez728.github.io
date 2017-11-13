@@ -10,7 +10,6 @@ const projectPage = require("./projects");
 const blogsOrProjects = () => {
 	if (document.querySelector("title").innerHTML === "Blog") {
 		blogger.checkOutTheseBlogs();
-		blogger.blogEvents();
 	} else if (document.querySelector("title").innerHTML === "Projects") {
 		projectPage.checkOutTheseProjects();
 	}
