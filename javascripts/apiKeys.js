@@ -1,6 +1,6 @@
 "use strict";
 
-const firebaseApi = require("./firebaseapi");
+const firebaseApi = require("./firebaseApi");
 
 const apiKeys = () => {
     return new Promise((resolve, reject) => {
@@ -12,14 +12,17 @@ const apiKeys = () => {
     });
 };
 
-const retrieveKeys = () => {
+const retrieveKey = () => {
+    return new Promise((resolve, reject) => {
     apiKeys().then((results) => {
         firebaseApi.setKey(results.firebaseKeys);
         firebase.initializeApp(results.firebaseKeys);
-		
+		resolve();
+    });
+
     }).catch((error) => {
         console.log("error", error);
     });
 };
 
-module.exports = { retrieveKeys };
+module.exports = { retrieveKey };

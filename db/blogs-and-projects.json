@@ -61,21 +61,21 @@
         {
             "title": "Acme Explosives",
             "description": "An NSS excercise.A simple product catalog where a user may select a category from a dropdowm. When a category is selected, any product under that category must be displayed.",
-            "path": "../images/acme-screenshot.png",
+            "path": "./images/acme-screenshot.png",
             "link": "https://github.com/alexsanchez728/acme-explosives",
             "id": "1"
         },
         {
             "title": "Adopt My Cats",
             "description": "An NSS excercise. A single page that allows the user to load in a number of cats, display them on the screen, and be able to filter them based on whether or not they are considered disabled (have 10 toes or less).",
-            "path": "../images/adopt-cats-screenshot.png",
+            "path": "./images/adopt-cats-screenshot.png",
             "link": "https://github.com/alexsanchez728/adopt-my-cats",
             "id": "2"
         },
         {
             "title": "Theme Park Map",
             "description": "An NSS group project. Create an interactive map for a theme park, allow the user to see all attractions based on a time they've selected or an area they've selected. Also, any names or descriptions that contain certain keywords will be effected in a special way when searched for.",
-            "path": "../images/theme-park-screenshot.png",
+            "path": "./images/theme-park-screenshot.png",
             "link": "https://github.com/nss-evening-cohort-06/theme-park-misc",
             "id": "3"
         }

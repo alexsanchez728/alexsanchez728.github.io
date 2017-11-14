@@ -11,8 +11,7 @@ const setKey = (key) => {
 const getContent = (choice) => {
     let toDisplay = [];
     return new Promise((resolve, reject) => {
-        // $.ajax(`${firebaseKey.databaseURL}/${choice}.json`).then((fbBlogs) => {
-        $.ajax(`https://ads-personal-site.firebaseio.com/${choice}.json`).then((results) => {
+        $.ajax(`${firebaseKey.databaseURL}/${choice}.json`).then((results) => {
             if (results != null) {
                 Object.keys(results).forEach((key) => {
                     results[key].id = key;
@@ -21,7 +20,7 @@ const getContent = (choice) => {
             }
             resolve(toDisplay);
         }).catch((err) => {
-            console.log("error in getBlogs", err);
+            console.log("error in blerg", err);
             reject(err);
         });
     });

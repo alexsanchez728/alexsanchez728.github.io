@@ -3,5 +3,8 @@
 let apiKeys = require("./apiKeys");
 let events = require("./events");
 
-apiKeys.retrieveKeys();
-events.init();
+apiKeys.retrieveKey().then(() => {
+  events.init();
+}).catch((err) => {
+  console.log(err);
+});
