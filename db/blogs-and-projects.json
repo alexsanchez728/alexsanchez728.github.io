@@ -55,6 +55,20 @@
             "content": "We officially started js in class this week. I’m glad I did the Treehouse prework that covered js because if I had to be dropped into this class with no prior knowledge of how js operated I would have been incredibly lost. Getting exposed to it in class and being taught about it again really reinforced the “how” and “why” of js’s inner workings.",
             "tags": "vanilla js javascript class",
             "id": "8"
+        },
+        {
+            "title": "Group Project: Theme Park Map",
+            "date": "Posted: 11/13/17",
+            "content": "This group project was assigned to us based on our Meyers-Briggs personality types, which was a fun was to group everyone together. Unless, you’re a personality that doesn’t fit with too many other peoples’. And that’s how the group of Miscellaneous personality came to be! And that was the group I was a part of: it was a great group though. All of us had a strong desire to focus on planning up front and making sure everyone was on the same page before any code was written. We used 3 full whiteboard to plan our initial file structure and describe what functions would be going where and who would be working on what. We knew this project would be a big one but we didn’t know how tough it would be.<br><br> On paper it sounded like a lot of ground to cover; between all the ajax calls using queries to only get the data we needed, to formatting our data structure when it came back to us, to making sure the final layout was up to our project manager’s specifications, it all sounded like a lot. BUT THEN, our project manager sends out not one, or two, but three changes to the project specs. And as our deadline was approaching we could no longer take time out of coding to rethink how it would effect out plan, we just had to take the hits as they came and roll with what we had going.<br><br> It was the toughest project to this point but man, now that it’s over I have to say I’m proud of our group’s work.<br><br>We all worked hard and asked questions and since we spent a good amount of time planning we all had a clear vision of the final project and I believe that was incredibly vital in the success of our group.",
+            "tags": "group project class nss theme park js javascript theme park ajax",
+            "id": "9"
+        },
+        {
+            "title": "AngularJS",
+            "date": "Posted: 11/19/17",
+            "content": "This past week we’ve been a lot with working with Angular, a platform that uses HTML and JS to make HTML more dynamic while writing less Javascript.<br><br> So far It’s been amazing and so quick to adopt, and it builds on the modularity of our file structure that we’ve been getting accustomed to.<br><br> Angular controllers get their own folder: ‘controllers’ and services like API calls and ajax calls are all kept in a ‘services’ folder.<br><br> This kind of modularity makes it easy for us to know where anything is kept at any time.<br><br> Angular’s use of scope and rootScope make it very easy to keep things modular as well.<br><br> And now that we can use Angular, we might never have to write a DOM string function for the rest of class! Getting to use {{handlebars}} to denote that something is a variable and can change whenever some piece of data changes is life-changing.<br><br> I’ve learned lately to really appreciate how far we’ve come as students but also how far development for the modern internet has come, Angular has made it clear to since, turning the static HTML page into something a little more dynamic is incredible.",
+            "tags": "angular api ajax dom html javascript exercises",
+            "id": "10"
         }
     ],
     "projects": [
