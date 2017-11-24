@@ -5,13 +5,34 @@
             "date": "Posted: 11/19/17",
             "content": "This past week we’ve been a lot with working with Angular, a platform that uses HTML and JS to make HTML more dynamic while writing less Javascript.  So far It’s been amazing and so quick to adopt, and it builds on the modularity of our file structure that we’ve been getting accustomed to.  Angular controllers get their own folder: ‘controllers’ and services like API calls and ajax calls are all kept in a ‘services’ folder.  This kind of modularity makes it easy for us to know where anything is kept at any time.  Angular’s use of scope and rootScope make it very easy to keep things modular as well.  And now that we can use Angular, we might never have to write a DOM string function for the rest of class! Getting to use {{handlebars}} to denote that something is a variable and can change whenever some piece of data changes is life-changing.  I’ve learned lately to really appreciate how far we’ve come as students but also how far development for the modern internet has come, Angular has made it clear to since, turning the static HTML page into something a little more dynamic is incredible.",
             "tags": "angular api ajax dom html javascript exercises",
-            "id": "10"
+            "id": "13"
         },        
         {
             "title": "Group Project: Theme Park Map",
             "date": "Posted: 11/13/17",
             "content": "This group project was assigned to us based on our Meyers-Briggs personality types, which was a fun was to group everyone together. Unless, you’re a personality that doesn’t fit with too many other peoples’. And that’s how the group of Miscellaneous personality came to be! And that was the group I was a part of: it was a great group though. All of us had a strong desire to focus on planning up front and making sure everyone was on the same page before any code was written. We used 3 full whiteboard to plan our initial file structure and describe what functions would be going where and who would be working on what. We knew this project would be a big one but we didn’t know how tough it would be.  On paper it sounded like a lot of ground to cover; between all the ajax calls using queries to only get the data we needed, to formatting our data structure when it came back to us, to making sure the final layout was up to our project manager’s specifications, it all sounded like a lot. BUT THEN, our project manager sends out not one, or two, but three changes to the project specs. And as our deadline was approaching we could no longer take time out of coding to rethink how it would effect out plan, we just had to take the hits as they came and roll with what we had going.  It was the toughest project to this point but man, now that it’s over I have to say I’m proud of our group’s work. We all worked hard and asked questions and since we spent a good amount of time planning we all had a clear vision of the final project and I believe that was incredibly vital in the success of our group.",
             "tags": "group project class nss theme park js javascript theme park ajax",
+            "id": "12"
+        },
+        {
+            "title": "Firebase",
+            "date": "Posted 10/31/17",
+            "content": "Google’s FIrebase software allows developers to host sites, have a database, incorporate login authentication, and a bunch of other stuff. It’s only built for small scale usage and for us as students that’s perfect. We got to use Firebase authentication to require our users to login using their Google account before they could interact with the rest of our app. And also used Firebase database to store a JSON file we set up that would be updated dynamically as the user interacted with certain parts of the app.",
+            "tags": "firebase database website google ",
+            "id": "11"   
+        },
+        {
+            "title": "API's",
+            "date": "Posted 10/24/17",
+            "content": "We had our first interactions with outside data, no longer making our own JSON file to use in our projects we used The Open Weather Map. A service that delivers weather information like many other weather services out there. But for us as developers to use their data we needed to use Open Weather Map’s API. Application programming interfaces, or simply API’s, are a way to communicate with and receive data from someone else’s database. We needed Open Weather Map’s weather information for the current forecast and 5 day forecast. This wasn’t as easy as just filling out a form and asking for only 1 and 5 days of weather data. Sadly this meant making one call for the data and sifting though the data to only display what we needed from that huge return of information. Using API’s means being very well read on the documentation they and others have put together for using the API. Documentation for making calls, what information one call will return, how to get certain things but not others and what all their data can do for the developer. But just because there is documentation that does not guarantee that it is good or even complete. Thankfully Open Weather Map had pretty good documentation, and most of the data we got back was what we needed.",
+            "tags": "API call xhr database data weather project class nss",
+            "id": "10"
+        },
+        {
+            "title": "Promises",
+            "date": "Posted 10/17/17",
+            "content": "Recently we’ve been learning about promises and using them when we need to make XHR calls. Promises are really cool because they make dealing with multiple JSON files easy, especially when there is a lot of data coming in. It’s like the promise is saying: “Hey wait until I have this data resolved before you do what you need to, I don’t want you executing with no or incomplete data.”  We tell things that need the data to wait while things that don’t need to data can continue to be executed. We saw this in action in our project ‘Acme Explosives.’ We set up 3 JSON files that had product information that needed to be displayed except each file had some product, category, or type number id that needed to match up with a product, category or type name in a different file. Basically one file required another which required another. Normally that would be an issue since all three files would load in whenever they decided they were ready and that can lead to a function executing before it had all the data it needed. So to deal with the asynchronous operating we chained promises: One call would be made after another. That ensured all data would be where we needed it before anything important happened like displaying information to the user.",
+            "tags": "XHR promises data database JSON javascript acme explosives class nss school project",
             "id": "9"
         },
         {
@@ -73,11 +94,25 @@
     ],
     "projects": [
         {
+            "title": "Front End Capstone",
+            "description": "Coming Soon!",
+            "path": "",
+            "link": "https://github.com/alexsanchez728/",
+            "id": "5"
+        },
+        {
+            "title": "Angular Movie History",
+            "description": "An NSS in-class project. Our first foray into using AngularJS for a single page app. The objective was to use The Movie Databse's API and also Firebase's Authentication and database services. Only users who sign-in will be able to use the site. Signed-in users can search movies, save movies to a wishlist, and rate watched movies",
+            "path": "",
+            "link": "https://github.com/alexsanchez728/angular-movie-history",
+            "id": "4"
+        },
+        {
             "title": "Acme Explosives",
-            "description": "An NSS excercise.A simple product catalog where a user may select a category from a dropdowm. When a category is selected, any product under that category must be displayed.",
+            "description": "An NSS excercise. A simple product catalog where a user may select a category from a dropdowm. When a category is selected, any product under that category must be displayed.",
             "path": "./images/acme-screenshot.png",
             "link": "https://github.com/alexsanchez728/acme-explosives",
-            "id": "1"
+            "id": "3"
         },
         {
             "title": "Adopt My Cats",
@@ -91,7 +126,7 @@
             "description": "An NSS group project. Create an interactive map for a theme park, allow the user to see all attractions based on a time they've selected or an area they've selected. Also, any names or descriptions that contain certain keywords will be effected in a special way when searched for.",
             "path": "./images/theme-park-screenshot.png",
             "link": "https://github.com/nss-evening-cohort-06/theme-park-misc",
-            "id": "3"
+            "id": "1"
         }
     ]
 }

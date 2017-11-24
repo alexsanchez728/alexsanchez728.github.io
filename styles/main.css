@@ -105,13 +105,12 @@ img {
 	overflow: hidden;
 }
 .panel-heading {
-	max-height: 150px;
+	height: 140px;
 }
-.project-panel {
+#projects-holder.project-panel {
 	height: 180px;
 	overflow: scroll;
 }
-
 
 
 
