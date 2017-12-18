@@ -1,0 +1,17 @@
+.entireNav {
+  border: none;
+  margin: 1% 1.5%;
+}
+nav {
+  font-family: 'Quicksand', sans-serif;
+  font-size: $fontSize;
+  // border-style: hidden;
+  
+  .name {
+    font-size: 1.2em;
+  }
+  
+  .myNav {
+    background-color: white;
+  }
+}

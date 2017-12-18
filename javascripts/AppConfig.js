@@ -28,5 +28,5 @@ app.config(function ($routeProvider) {
       templateUrl: 'partials/projects.html',
       controller: 'ProjectsCtrl',
     })
-    .otherwise('/projects');
+    .otherwise('/about');
 });
