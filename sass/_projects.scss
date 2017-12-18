@@ -1,7 +1,9 @@
+@import 'variables';
+
 .title-and-image {
   height: 200px;
   h4 {
-    font-size: 1.6em;
+    font-size: $fontSize;
   }
   img {
     height: 150px;
