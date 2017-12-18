@@ -103,7 +103,7 @@
         {
             "title": "Angular Movie History",
             "description": "An NSS in-class project. Our first foray into using AngularJS for a single page app. The objective was to use The Movie Databse's API and also Firebase's Authentication and database services. Only users who sign-in will be able to use the site. Signed-in users can search movies, save movies to a wishlist, and rate watched movies",
-            "path": "",
+            "path": "./images/angular-movies.png",
             "link": "https://github.com/alexsanchez728/angular-movie-history",
             "id": "4"
         },
