@@ -1,0 +1,44 @@
+
+
+/*BLOG*/
+.blog-card {
+	margin: 0 15px;
+}
+.jumbotron p {
+	font-size: 1em;
+	line-height: 1.4em;
+}
+.panel {
+	height: 300px;
+	overflow: hidden;
+}
+.panel-heading {
+	height: 140px;
+}
+
+
+.blog-card {
+	margin: 1%;
+	width: 300px;
+	border: 1px solid rgb(216, 216, 216);
+  border: 1px solid rgba(216, 216, 216, .75);
+	border-radius: 2%;
+	flex-direction: column;
+}
+.blog-card > div:first-child {
+	text-align: center;
+	text-transform: uppercase;
+	border-bottom: 1px solid rgba(216, 216, 216, .75);
+}
+.blog-card h4 {
+	font-size: 1.6em;
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+.blog-card h6 {
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+.blog-card p {
+	margin: 10px 12px 12px;
+}

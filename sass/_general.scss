@@ -1,0 +1,41 @@
+@import 'variables';
+
+
+/*GENERAL STYLING*/
+body {
+	font-family: 'Droid Sans', sans-serif;
+	margin: 0 auto;
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+.site-content {
+	flex: 1;
+}
+h1 {
+	text-align: center;
+}
+section {
+	display: flex;
+	justify-content: space-around;
+	margin: 0 30%;
+}
+footer {
+	text-align: right;
+	background-color: #c0ffee;
+}
+#blogJumbotron {
+  padding: 2%;
+  background-color: $grey;
+}
+
+
+
+
+
+
+
+
+
+
+

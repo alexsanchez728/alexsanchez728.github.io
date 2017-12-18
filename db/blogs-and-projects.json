@@ -94,7 +94,7 @@
     ],
     "projects": [
         {
-            "title": "NPC Tracker for the Star Wars RPG Tabletop Game",
+            "title": "NPC Tracker for Star Wars RPG",
             "description": "Front End Capstone: A companion app for the Star Wars Role Playing Game. Game Masters now have the ability to quickly create custom units to use in battle. Create, save, and track damage all in one place! It's time to throw away all those index cards of character information.",
             "path": "./images/sw-npc.png",
             "link": "https://github.com/alexsanchez728/SWRPG-NPC-generator-and-tracker",
@@ -130,7 +130,7 @@
         },
         {
             "title": "Sandwich Maker",
-            "description": "An NSS group project. Create a sandwich order form that allows the user to select all the ingredients for a custom deli sandwich. Create a Sandwich module, then create the following as individual modules, using IIFE syntax, to augment the sandwich.",
+            "description": "An NSS excercise. Create a sandwich order form that allows the user to select all the ingredients for a custom deli sandwich. Create a Sandwich module, then create the following as individual modules, using IIFE syntax, to augment the sandwich.",
             "path": "./images/sandwich-maker.png",
             "link": "https://github.com/alexsanchez728/sandwich-maker",
             "id": "1"
