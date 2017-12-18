@@ -1,0 +1,43 @@
+<div class="row" id="blog">
+  <form class="col-xs-offset-3 col-xs-6">
+    <div class="form-group">
+      <input type="text" id="input-field" class="form-control" placeholder="Search Blog Posts" ng-model="blogSearch">
+      <button type="button" id="search-btn" class="btn btn-default" ng-click="blogSearch = ''">Clear Search</button>
+    </div>
+  </form>
+  <div class="col-sm-10 col-sm-offset-1">
+
+
+    <div class="jumbotron" id="blogJumbotron" ng-if="!showBlog">
+      <h3>Blogs</h3>
+      <p>Click a blog thumbnail below to see the full content here!</p>
+    </div>
+    
+    <div class="jumbotron" id="blogJumbotron" ng-if="showBlog">
+      <h2 class="panel-title text-center">{{chosenBlog.title}}</h2>
+      <h6 class="text-center">{{chosenBlog.date}}</h6>
+      <div class="panel-body">
+        <p>{{chosenBlog.content}}</p>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+<div ng-repeat="blog in blogs | filter: blogSearch" id="blog-holder" ng-click="moreInfo(blog)">
+  <div class="col-sm-4">
+    <div class="panel panel-default" >
+      <div class="panel-heading">
+        <h4 class="panel-title ">{{blog.title}}</h4>
+        <h6>{{blog.date}}</h6>
+        </div>
+        <div class="panel-body">
+          <p>{{blog.content}}</p>   
+        </div>
+      </div>
+  </div>
+</div>
+
+
+
+<!-- <footer>Copyright Alex Sanchez 2017</footer> -->
