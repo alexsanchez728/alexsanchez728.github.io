@@ -26,7 +26,6 @@
   transform: translate(0, -6px);
 }
 
-
 .toggle-opacity {
   transition: background, 0.75s;
   background: rgba(0,0,0,0.4);
@@ -35,8 +34,13 @@
     transition: opacity, 0.5s;
     opacity: 0.1;
     }
-  h4, a {
+  a {
     color: white;
+  }
+  @media (max-width: 1290px) {
+    h4 {
+      opacity: 0;
+    }
   }
 }
 
@@ -47,6 +51,7 @@
   }
 }
 .details {
+  z-index: 999;
   padding: 2%;
   i {
     font-size: $fontSize + 0.4em;
@@ -64,4 +69,3 @@
   padding: 20px;
   margin-right: 5px;
 }
-

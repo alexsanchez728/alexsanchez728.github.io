@@ -5,10 +5,13 @@ body {
 footer {
   position: fixed;
   left: 6px;
-  bottom: 0px;
+  bottom: 10px;
   height: 30px;
   width: 14.37%;
   color: #eee; }
+  @media (max-width: 768px) {
+    footer {
+      display: none; } }
 
 #blogJumbotron {
   padding: 2%;
@@ -152,8 +155,11 @@ nav {
   .toggle-opacity .product-img {
     transition: opacity, 0.5s;
     opacity: 0.1; }
-  .toggle-opacity h4, .toggle-opacity a {
+  .toggle-opacity a {
     color: white; }
+  @media (max-width: 1290px) {
+    .toggle-opacity h4 {
+      opacity: 0; } }
 
 .project-panel {
   height: 90px; }
@@ -161,6 +167,7 @@ nav {
     font-size: 1.8em; }
 
 .details {
+  z-index: 999;
   padding: 2%; }
   .details i {
     font-size: 2em;

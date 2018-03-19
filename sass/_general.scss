@@ -6,10 +6,13 @@ body {
 footer {
   position: fixed;
   left: 6px;
-  bottom: 0px;
+  bottom: 10px;
   height: 30px;
   width: $navSize;
   color: $background;
+  @media (max-width: 768px) {
+    display: none;
+  }
 }
 #blogJumbotron {
   padding: 2%;
