@@ -1,14 +1,17 @@
+@import 'variables';
 body {
-	font-family: 'Droid Sans', sans-serif;
+  font-family: 'Droid Sans', sans-serif;
+  background-color: $background;
 }
 footer {
-  position:fixed;
-  left:0px;
-  bottom:0px;
-  height:30px;
-  width:100%;
+  position: fixed;
+  left: 6px;
+  bottom: 0px;
+  height: 30px;
+  width: $navSize;
+  color: $background;
 }
 #blogJumbotron {
   padding: 2%;
-  background-color: white;
+  background-color: $background;
 }

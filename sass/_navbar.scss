@@ -1,17 +1,88 @@
-.entireNav {
-  border: none;
-  margin: 1% 1.5%;
-}
+@import 'variables';
+
 nav {
   font-family: 'Quicksand', sans-serif;
   font-size: $fontSize;
-  // border-style: hidden;
-  
   .name {
     font-size: 1.2em;
   }
+  ul {
+    max-width: $navSize;
+    float: right;
+  }
+}
+
+@media (min-width: 768px) {
+
+  #nav-container {
+    padding-left: 0;
+    i, a, h3{
+      color: #eee;
+      font-size: 1.1em;
+      width: fit-content;
+    }
+  }
   
-  .myNav {
-    background-color: white;
+  #socials {
+    margin: 15% 50%;
+    width: 25px;
+    a {
+      margin: 50% 0;
+    }
+  }
+
+  #side-nav {
+  max-width: $navSize; 
+  z-index: 999;
+}
+
+#panel {
+  background-color: #009688;
+  position: fixed;
+  width: $navSize;
+  height: 100%;
+  z-index: 0;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+  .navbar-collapse {
+    height: auto;
+    border-top: 0;
+    box-shadow: none;
+    max-height: none;
+    padding-left:0;
+    padding-right:0;
+    .collapse {
+      display: block !important;
+      width: auto !important;
+      padding-bottom: 0;
+      overflow: visible !important;
+    }
+    .navbar-nav.navbar-right:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .navbar
+  {
+    max-width: 300px;
+    margin-right: 0;
+    margin-left: 0;
+    border: none;
+    border-radius: 0;
+  }	
+
+  .navbar-nav,
+  .navbar-nav > li,
+  .navbar-left,
+  .navbar-right,
+  .navbar-header
+  {
+    float:none !important;
+  }
+
+  .navbar-right .dropdown-menu {
+    left: 0;
+    right: auto;
   }
 }
