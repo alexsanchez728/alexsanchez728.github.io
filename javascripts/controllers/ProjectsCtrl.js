@@ -1,6 +1,6 @@
 'use strict';
 
-app.controller("ProjectsCtrl", function ( $scope, DatabaseServices){
+app.controller("ProjectsCtrl", function ($scope, DatabaseServices) {
 
   $scope.projects = [];
 
@@ -11,7 +11,11 @@ app.controller("ProjectsCtrl", function ( $scope, DatabaseServices){
       console.log("error in checkoutTheseProjects", error);
     });
   };
-  
+
   checkOutTheseProjects();
-  
+
+  $scope.showProjectDescription = (index) => {
+    document.getElementById("project-description" + index).classList.toggle("hide");
+    document.getElementById("project" + index).classList.toggle("toggle-opacity");
+  };
 });
