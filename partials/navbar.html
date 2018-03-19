@@ -1,37 +1,41 @@
-<nav class="navbar navbar-default entireNav">
-  <div class="container-fluid myNav">
-    <!-- Brand and toggle get grouped for better mobile display -->
+<div class="col-sm-2" id="nav-container">
+  <nav class="navbar navbar-default" role="navigation" id="panel">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
-        aria-expanded="false">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand name" href="#!/about">Alex Sanchez</a>
+      <h3 class="navbar-brand">Alex Sanchez</h3>
     </div>
 
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <div class="collapse navbar-collapse navbar-ex1-collapse" id="side-nav">
       <ul class="nav navbar-nav navbar-right">
         <li>
-          <a href="#!/personal-history">Professional History</a>
+          <a href="#!/about">Home</a>
         </li>
         <li>
-          <a href="#!/contact">Contact Page</a>
-        </li>
-        <li>
-          <a href="#!/about">About Me</a>
-        </li>
-        <li>
-          <a href="#!/projects">Projects</a>
+          <a href="#!/projects">Portfolio</a>
         </li>
         <li>
           <a href="#!/blog">Blog</a>
         </li>
       </ul>
+      <div id="socials">
+        <a class="col-sm-6" target=_blank href="mailto:alesanchez728@gmail.com">
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+        </a>
+        <a class="col-sm-6" target=_blank href="https://www.linkedin.com/in/alejandro-sanchez-559615125/">
+          <i class="fa fa-linkedin" aria-hidden="true"></i>
+        </a>
+        <a class="col-sm-6" target=_blank href="https://github.com/alexsanchez728">
+          <i class="fa fa-github" aria-hidden="true"></i>
+        </a>
+        <a class="col-sm-6" target=_blank href="https://www.instagram.com/alexdavidsanchez">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>
+      </div>
     </div>
-    <!-- /.navbar-collapse -->
-  </div>
-  <!-- /.container-fluid -->
-</nav>
+  </nav>
+</div>

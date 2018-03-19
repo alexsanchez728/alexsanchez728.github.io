@@ -1,22 +1,31 @@
 <div class="row" id="projects">
   <div class="col-sm-10 col-sm-offset-1">
     <div class="jumbotron" id="blogJumbotron">
-      <h3>Projects</h3>
-      <p>A showcase of projects I have completed, or am currently working on!</p>
+      <h3>Portfolio</h3>
+      <hr>
     </div>
   </div>
 </div>
-
 <div ng-repeat="project in projects">
   <div class="col-sm-4">
-    <div class="project-card panel panel-default">
-      <div class=" title-and-image panel-heading">
-        <h4 class="panel-title text-center">{{project.title}}</h4>
+    <div id="project{{$index}}" class="project-card panel panel-default">
+      <div class="panel-heading">
         <img src="{{project.path}}" alt="project screenshot" class="product-img center-block">
       </div>
-      <div class="panel-text panel-body project-panel">
+      <div class="project-panel panel-text panel-body">
+        <h4 class="panel-title text-center">{{project.title}}</h4>
+      </div>
+      <div id="project-description{{$index}}" class="hide project-description panel-text">
         <p>{{project.description}}</p>
-        <a target=_blank href={{project.link}}><i class="fa fa-github" aria-hidden="true"></i></a>
+      </div>
+      <div class="details">
+        <hr>
+        <a target=_blank href={{project.link}}>
+          <i class="fa fa-github" aria-hidden="true"></i>
+        </a>
+        <a ng-click="showProjectDescription($index)" class="ellipsis-dropdown">
+          <i class="fa fa-ellipsis-h"></i>
+        </a>
       </div>
     </div>
   </div>

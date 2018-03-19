@@ -1,0 +1,24 @@
+@import 'variables';
+
+#about-content {
+   font-family: 'Quicksand', sans-serif;
+    margin-bottom: 20%;
+    margin-top: 2%;
+    font-size: $fontSize;
+
+    h3:last-of-type {
+    text-align: right;
+    border-bottom: none;
+    font-weight: bolder;
+    }
+    p:not(:last-of-type){
+      text-indent: 50px;
+    }
+    a {
+      text-decoration: underline;
+    }
+}
+
+.heading:first-of-type {
+  text-decoration-line: underline;
+}

@@ -1,26 +1,99 @@
-.socials {
-  text-align: center; }
-  .socials a {
-    font-size: 2em; }
-  .socials h4 {
-    font-size: 1.6em; }
+body {
+  font-family: 'Droid Sans', sans-serif;
+  background-color: #eee; }
+
+footer {
+  position: fixed;
+  left: 6px;
+  bottom: 10px;
+  height: 30px;
+  width: 14.37%;
+  color: #eee; }
+  @media (max-width: 768px) {
+    footer {
+      display: none; } }
+
+#blogJumbotron {
+  padding: 2%;
+  background-color: #eee; }
+
+nav {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.6em; }
+  nav .name {
+    font-size: 1.2em; }
+  nav ul {
+    max-width: 14.37%;
+    float: right; }
+
+@media (min-width: 768px) {
+  #nav-container {
+    padding-left: 0; }
+    #nav-container i, #nav-container a, #nav-container h3 {
+      color: #eee;
+      font-size: 1.1em;
+      width: fit-content; }
+  #socials {
+    margin: 15% 50%;
+    width: 25px; }
+    #socials a {
+      margin: 50% 0; }
+  #side-nav {
+    max-width: 14.37%;
+    z-index: 999; }
+  #panel {
+    background-color: #009688;
+    position: fixed;
+    width: 14.37%;
+    height: 100%;
+    z-index: 0;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
+  .navbar-collapse {
+    height: auto;
+    border-top: 0;
+    box-shadow: none;
+    max-height: none;
+    padding-left: 0;
+    padding-right: 0; }
+    .navbar-collapse .collapse {
+      display: block !important;
+      width: auto !important;
+      padding-bottom: 0;
+      overflow: visible !important; }
+    .navbar-collapse .navbar-nav.navbar-right:last-child {
+      margin-right: 0; }
+  .navbar {
+    max-width: 300px;
+    margin-right: 0;
+    margin-left: 0;
+    border: none;
+    border-radius: 0; }
+  .navbar-nav,
+  .navbar-nav > li,
+  .navbar-left,
+  .navbar-right,
+  .navbar-header {
+    float: none !important; }
+  .navbar-right .dropdown-menu {
+    left: 0;
+    right: auto; } }
 
 #about-content {
   font-family: 'Quicksand', sans-serif;
-  font-size: 1.6em;
   margin-bottom: 20%;
-  margin-top: 2%; }
-  #about-content h3 {
-    font-weight: bolder;
-    border-bottom: 1px solid black; }
+  margin-top: 2%;
+  font-size: 1.6em; }
   #about-content h3:last-of-type {
     text-align: right;
     border-bottom: none;
     font-weight: bolder; }
-  #about-content p {
+  #about-content p:not(:last-of-type) {
     text-indent: 50px; }
   #about-content a {
     text-decoration: underline; }
+
+.heading:first-of-type {
+  text-decoration-line: underline; }
 
 /*BLOG*/
 .blog-card {
@@ -57,43 +130,54 @@
 .blog-card p {
   margin: 10px 12px 12px; }
 
-body {
-  font-family: 'Droid Sans', sans-serif; }
-
-footer {
-  position: fixed;
-  left: 0px;
-  bottom: 0px;
-  height: 30px;
-  width: 100%; }
-
-#blogJumbotron {
-  padding: 2%;
-  background-color: white; }
-
-.entireNav {
-  border: none;
-  margin: 1% 1.5%; }
-
-nav {
-  font-family: 'Quicksand', sans-serif;
-  font-size: 1.6em; }
-  nav .name {
-    font-size: 1.2em; }
-  nav .myNav {
-    background-color: white; }
-
-.title-and-image {
-  height: 200px; }
-  .title-and-image h4 {
-    font-size: 1.6em; }
-  .title-and-image img {
-    height: 150px;
-    min-width: 270px; }
-
 .project-card {
-  height: 360px; }
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  height: 100%;
+  background-color: #fff;
+  transition: background-color, 0.75s; }
+  .project-card .product-img {
+    transition: opacity, 0.5s;
+    opacity: 1; }
+  .project-card div:first-child {
+    height: 200px;
+    padding: 0; }
+    .project-card div:first-child img {
+      height: 100%;
+      width: 100%; }
 
-.panel-text {
-  height: 174px;
-  overflow: scroll; }
+.project-card:hover {
+  box-shadow: 0 6px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 3px 0 rgba(0, 0, 0, 0.12), 0 10px 10px 0px rgba(0, 0, 0, 0.2);
+  transform: translate(0, -6px); }
+
+.toggle-opacity {
+  transition: background, 0.75s;
+  background: rgba(0, 0, 0, 0.4); }
+  .toggle-opacity .product-img {
+    transition: opacity, 0.5s;
+    opacity: 0.1; }
+  .toggle-opacity a {
+    color: white; }
+  @media (max-width: 1290px) {
+    .toggle-opacity h4 {
+      opacity: 0; } }
+
+.project-panel {
+  height: 90px; }
+  .project-panel h4 {
+    font-size: 1.8em; }
+
+.details {
+  z-index: 999;
+  padding: 2%; }
+  .details i {
+    font-size: 2em;
+    padding: 2%; }
+
+.hide {
+  display: none; }
+
+.project-description {
+  position: absolute;
+  top: 5px;
+  padding: 20px;
+  margin-right: 5px; }

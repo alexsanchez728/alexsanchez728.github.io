@@ -1,19 +1,71 @@
 @import 'variables';
 
-.title-and-image {
-  height: 200px;
-  h4 {
-    font-size: $fontSize;
-  }
-  img {
-    height: 150px;
-    min-width: 270px;
-  }
-}
 .project-card {
-  height: 360px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+  height: 100%;
+  background-color: #fff;
+  transition: background-color, 0.75s;
+  
+  .product-img {
+    transition: opacity, 0.5s;
+    opacity: 1;
+    }
+
+  div:first-child {
+    height: 200px;
+    padding: 0;
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
 }
-.panel-text {
-  height: 174px;
-  overflow: scroll;
+
+  .project-card:hover {
+  box-shadow: 0 6px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 3px 0 rgba(0, 0, 0, 0.12), 0 10px 10px 0px rgba(0, 0, 0, 0.2);
+  transform: translate(0, -6px);
+}
+
+.toggle-opacity {
+  transition: background, 0.75s;
+  background: rgba(0,0,0,0.4);
+  
+  .product-img {
+    transition: opacity, 0.5s;
+    opacity: 0.1;
+    }
+  a {
+    color: white;
+  }
+  @media (max-width: 1290px) {
+    h4 {
+      opacity: 0;
+    }
+  }
+}
+
+.project-panel {
+  height: 90px;
+  h4 {
+    font-size: $fontSize + 0.2em;
+  }
+}
+.details {
+  z-index: 999;
+  padding: 2%;
+  i {
+    font-size: $fontSize + 0.4em;
+    padding: 2%;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+.project-description {
+  position: absolute;
+  top: 5px;
+  padding: 20px;
+  margin-right: 5px;
 }
