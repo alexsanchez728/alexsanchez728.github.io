@@ -1,62 +1,3 @@
-.socials {
-  text-align: center; }
-  .socials a {
-    font-size: 2em; }
-  .socials h4 {
-    font-size: 1.6em; }
-
-#about-content {
-  font-family: 'Quicksand', sans-serif;
-  font-size: 1.6em;
-  margin-bottom: 20%;
-  margin-top: 2%; }
-  #about-content h3 {
-    font-weight: bolder;
-    border-bottom: 1px solid black; }
-  #about-content h3:last-of-type {
-    text-align: right;
-    border-bottom: none;
-    font-weight: bolder; }
-  #about-content p {
-    text-indent: 50px; }
-  #about-content a {
-    text-decoration: underline; }
-
-/*BLOG*/
-.blog-card {
-  margin: 0 15px; }
-
-.jumbotron p {
-  font-size: 1.6em;
-  line-height: 1.7em; }
-
-.panel {
-  height: 300px;
-  overflow: hidden; }
-
-.panel-heading {
-  height: 140px; }
-
-.blog-card {
-  margin: 1%;
-  width: 300px;
-  border: 1px solid #d8d8d8;
-  border: 1px solid rgba(216, 216, 216, 0.75);
-  border-radius: 2%;
-  flex-direction: column; }
-
-.blog-card h4 {
-  font-size: 1.6em;
-  margin-top: 15px;
-  margin-bottom: 10px; }
-
-.blog-card h6 {
-  margin-top: 10px;
-  margin-bottom: 20px; }
-
-.blog-card p {
-  margin: 10px 12px 12px; }
-
 body {
   font-family: 'Droid Sans', sans-serif;
   background-color: #eee; }
@@ -133,6 +74,58 @@ nav {
   .navbar-right .dropdown-menu {
     left: 0;
     right: auto; } }
+
+#about-content {
+  font-family: 'Quicksand', sans-serif;
+  margin-bottom: 20%;
+  margin-top: 2%;
+  font-size: 1.6em; }
+  #about-content h3:last-of-type {
+    text-align: right;
+    border-bottom: none;
+    font-weight: bolder; }
+  #about-content p:not(:last-of-type) {
+    text-indent: 50px; }
+  #about-content a {
+    text-decoration: underline; }
+
+.heading:first-of-type {
+  text-decoration-line: underline; }
+
+/*BLOG*/
+.blog-card {
+  margin: 0 15px; }
+
+.jumbotron p {
+  font-size: 1.6em;
+  line-height: 1.7em; }
+
+.panel {
+  height: 300px;
+  overflow: hidden; }
+
+.panel-heading {
+  height: 140px; }
+
+.blog-card {
+  margin: 1%;
+  width: 300px;
+  border: 1px solid #d8d8d8;
+  border: 1px solid rgba(216, 216, 216, 0.75);
+  border-radius: 2%;
+  flex-direction: column; }
+
+.blog-card h4 {
+  font-size: 1.6em;
+  margin-top: 15px;
+  margin-bottom: 10px; }
+
+.blog-card h6 {
+  margin-top: 10px;
+  margin-bottom: 20px; }
+
+.blog-card p {
+  margin: 10px 12px 12px; }
 
 .title-and-image {
   height: 200px; }
