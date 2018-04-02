@@ -115,10 +115,19 @@
     ],
     "projects": [
         {
+            "title": "Click 'n' Roll",
+            "description": "A simple 20 level puzzle game built using the Unity engine. Click once to roll the ball towards your goal but be smart about your click! The ball can only bounce 5 times before it can't roll any farther.",
+            "path": "./images/sw-npc.png",
+            "link": "https://github.com/alexsanchez728/Click-n-Roll",
+            "live": "https://sw-npc-tracker.firebaseapp.com",
+            "id": "7" 
+        },
+        {
             "title": "NPC Tracker for Star Wars RPG",
-            "description": "Front End Capstone: A companion app for the Star Wars Role Playing Game. Game Masters now have the ability to quickly create custom units to use in battle. Create, save, and track damage all in one place! It's time to throw away all those index cards of character information.",
-            "path": "./images/sw-npc-01.png",
+            "description": "Front End Capstone: A companion app for the Star Wars Role Playing Game. A CRUD app that updates after every change the user makes. Using AngularJS and Javascript I set up independent inputs and drop down menus for each unit created from an ng-repeat. 'Unit cards' can be created in bulk while the ability to edit and delete one unit card at a time still exists.",
+            "path": "./images/sw-npc.png",
             "link": "https://github.com/alexsanchez728/SWRPG-NPC-generator-and-tracker",
+            "live": "https://sw-npc-tracker.firebaseapp.com",
             "id": "6"
         },
         {

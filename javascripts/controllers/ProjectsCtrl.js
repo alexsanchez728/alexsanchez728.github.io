@@ -14,6 +14,14 @@ app.controller("ProjectsCtrl", function ($scope, DatabaseServices) {
 
   checkOutTheseProjects();
 
+  $scope.showLiveWebLink = (project) => {
+    if ("live" in project)
+      return true;
+
+    return false;
+
+  };
+
   $scope.showProjectDescription = (index) => {
     document.getElementById("project-description" + index).classList.toggle("hide");
     document.getElementById("project" + index).classList.toggle("toggle-opacity");
