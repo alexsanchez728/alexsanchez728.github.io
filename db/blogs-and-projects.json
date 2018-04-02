@@ -117,9 +117,9 @@
         {
             "title": "Click 'n' Roll",
             "description": "A simple 20 level puzzle game built using the Unity engine. Click once to roll the ball towards your goal but be smart about your click! The ball can only bounce 5 times before it can't roll any farther.",
-            "path": "./images/sw-npc.png",
+            "path": "./images/click-n-roll.png",
             "link": "https://github.com/alexsanchez728/Click-n-Roll",
-            "live": "https://sw-npc-tracker.firebaseapp.com",
+            "live": "https://gamejolt.com/games/ClicknRoll/330770",
             "id": "7" 
         },
         {
